@@ -20,6 +20,7 @@ const Card = ({ title, actors }) => {
   // You can have multiple useEffect hooks in a single component to separate different concerns. For example, you can have one useEffect for logging and another for fetching data. Each useEffect will run independently based on its own dependencies.
   useEffect(() => {
     console.log(`The component for ${title} has mounted.`);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Very common use case (empty dependency array): This useEffect will run only once when the component mounts, and it will not run again on subsequent renders.
 
 
